@@ -20,7 +20,7 @@ onNameChange = (event) => {
   this.setState({name: event.target.value})
 }
 onSubmitSignIn = () => {
-  fetch('http://localhost:3100/register', {
+  fetch('https://pure-taiga-38157.herokuapp.com/register', {
     method: 'post',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
